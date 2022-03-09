@@ -1,0 +1,73 @@
+@import 'mixins';
+// @import './fonts.scss'; если в проекте необходимо подключать шрифты локально
+// то в папку src/fonts закинуть необходимые файлы шрифтов а сборка сама их преобразует в режиме build в нужные форматы
+//&display=swap
+//&subset=cyrillic-ext
+@import url('https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap');
+@import 'fonts';
+@import 'icons';
+// ПЕРЕМЕННЫЕ ===========================================================================================
+$fontFamily: 'Heebo';
+
+$minWidth: 320px;
+$maxWidth: 1152;
+
+$maxWidthContainer: 856;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+$primaryColor: #ff6464;
+$secondryColor: #00a8cc;
+$darkColor: #21243d;
+$lightColor: #8695a4;
+
+// ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ ===========================================================================
+@import 'null';
+/* ---------------------------------- */
+
+body {
+  color: #000;
+  font-size: 14px;
+  &._lock {
+    overflow: hidden;
+  }
+}
+//<ОБОЛОЧКА>===========================================================================================================
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  &._loaded {
+  }
+}
+
+//</ОБОЛОЧКА>===========================================================================================================
+
+//<ОСНОВНАЯ СЕТКА>===========================================================================================================
+._container {
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  @media (max-width: $md1+px) {
+    max-width: 750px;
+  }
+  @media (max-width: $md2+px) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+//@import "datepicker";
+//@import "lightgallery";
+//@import "pagging";
+//@import 'popup';
+@import 'header';
+@import 'footer';
+// @import 'home';
+// @import 'works';
+// @import 'blog';
+// @import 'article';
