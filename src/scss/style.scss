@@ -68,8 +68,8 @@ body {
 @import 'header';
 @import 'footer';
 @import 'homepage';
-// @import 'works';
-// @import 'blog';
+@import 'works';
+@import 'blog';
 // @import 'article';
 @import 'ui';
 @import 'forms';
@@ -95,7 +95,7 @@ body {
     color: inherit;
     @media (min-width: $md2+px) {
       &:hover {
-        color: #ff6464;
+        color: $primaryColor;
       }
     }
   }
