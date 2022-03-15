@@ -5,7 +5,7 @@
   &__title {
     font-weight: 700;
     font-size: 34px;
-    line-height: 50 / 34 * 100%;
+    line-height: calc(calc(50 / 34) * 100%);
     margin-bottom: 30px;
     @media (max-width: $md3+px) {
       font-size: 30px;
@@ -22,7 +22,7 @@
     padding: 0px 10px;
     font-weight: 900;
     font-size: 18px;
-    line-height: 60 / 18 * 100%;
+    line-height: calc(calc(60 / 18) * 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@
     align-self: center;
     margin-left: 25px;
     font-size: 20px;
-    line-height: 25 / 20 * 100%;
+    line-height: calc(calc(25 / 20) * 100%);
     color: inherit;
     @media (max-width: $md3+px) {
       font-size: 18px;

@@ -125,7 +125,7 @@
     display: inline-block;
     font-weight: 700;
     font-size: 26px;
-    line-height: 38 / 26 * 100%;
+    line-height: calc(cacl(38/26) * 100%);
     color: inherit;
     transition: color 0.3s ease 0s;
     margin-bottom: 17px;
@@ -142,7 +142,7 @@
   &__info {
     margin-bottom: 15px;
     font-size: 18px;
-    line-height: 26 / 18 * 100%;
+    line-height: calc(calc(26 / 18) * 100%);
     span {
       margin: 0px 10px;
     }
